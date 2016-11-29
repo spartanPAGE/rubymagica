@@ -1,11 +1,14 @@
 require 'rubymagica/version'
-require 'gosu'
-
+require 'rubymagica/game'
+require 'rubymagica/time'
 module Rubymagica
-  class App < Gosu::Window
+  class App
     def initialize
-      super(640, 480)
-      self.caption = 'Hello world!'
+      @game = Rubymagica::Game.new
+    end
+
+    def start
+      @game.show
     end
   end
 end
