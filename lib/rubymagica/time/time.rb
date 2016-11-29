@@ -1,10 +1,10 @@
-require 'delta_time_calculator'
+require_relative 'delta_time_calculator'
 
 module Rubymagica
   class Time
     class << self
       def reset
-        @calculator = Helper::Time::TimeDifferenceCalculator.new
+        @calculator = DeltaTimeCalculator.new
       end
 
       def calculator

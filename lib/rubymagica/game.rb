@@ -7,7 +7,7 @@ module Rubymagica
       self.caption = 'Hello world!'
     end
 
-    def update
+    def update(clock=Time)
     end
 
     def draw
