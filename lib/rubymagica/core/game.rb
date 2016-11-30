@@ -1,5 +1,5 @@
 require 'gosu'
-
+require 'rubymagica/time/time'
 module Rubymagica
   class TickingWindow < Gosu::Window
     attr_reader :clock, :scenes_stack

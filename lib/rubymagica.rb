@@ -1,14 +1,14 @@
 require 'rubymagica/version'
-require 'rubymagica/game'
-require 'rubymagica/time'
+require 'rubymagica/core/game'
+
 module Rubymagica
   class App
     def initialize
-      @game = Rubymagica::Game.new
+      #@game = Rubymagica::TickingWindow.new
     end
 
     def start
-      @game.show
+      #@game.show
     end
   end
 end
